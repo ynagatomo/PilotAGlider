@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAEB3F0A2CE7352800F5EAAE /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = BAEB3F092CE7352800F5EAAE /* RealityKitContent */; };
+		BAEB3F2C2CE7362F00F5EAAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEB3F222CE7362F00F5EAAE /* Preview Assets.xcassets */; };
+		BAEB3F2D2CE7362F00F5EAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEB3F252CE7362F00F5EAAE /* Assets.xcassets */; };
+		BAEB3F2F2CE7362F00F5EAAE /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F242CE7362F00F5EAAE /* AppModel.swift */; };
+		BAEB3F302CE7362F00F5EAAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F262CE7362F00F5EAAE /* ContentView.swift */; };
+		BAEB3F312CE7362F00F5EAAE /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F272CE7362F00F5EAAE /* ImmersiveView.swift */; };
+		BAEB3F322CE7362F00F5EAAE /* PilotAGliderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F292CE7362F00F5EAAE /* PilotAGliderApp.swift */; };
+		BAEB3F332CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F2A2CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift */; };
+		BAEB3F3D2CE7374400F5EAAE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F3C2CE7374400F5EAAE /* Logger.swift */; };
+		BAEB3F3F2CE737A700F5EAAE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = BAEB3F3E2CE737A700F5EAAE /* PrivacyInfo.xcprivacy */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BAEB3F042CE7352800F5EAAE /* PilotAGlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotAGlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAEB3F082CE7352800F5EAAE /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		BAEB3F222CE7362F00F5EAAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAEB3F242CE7362F00F5EAAE /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		BAEB3F252CE7362F00F5EAAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAEB3F262CE7362F00F5EAAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAEB3F272CE7362F00F5EAAE /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		BAEB3F282CE7362F00F5EAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEB3F292CE7362F00F5EAAE /* PilotAGliderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotAGliderApp.swift; sourceTree = "<group>"; };
+		BAEB3F2A2CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleImmersiveSpaceButton.swift; sourceTree = "<group>"; };
+		BAEB3F3C2CE7374400F5EAAE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		BAEB3F3E2CE737A700F5EAAE /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		BAEB3F402CE73B7400F5EAAE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAEB3F012CE7352800F5EAAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEB3F0A2CE7352800F5EAAE /* RealityKitContent in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAEB3EFB2CE7352800F5EAAE = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F402CE73B7400F5EAAE /* README.md */,
+				BAEB3F2B2CE7362F00F5EAAE /* PilotAGlider */,
+				BAEB3F072CE7352800F5EAAE /* Packages */,
+				BAEB3F052CE7352800F5EAAE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAEB3F052CE7352800F5EAAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F042CE7352800F5EAAE /* PilotAGlider.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAEB3F072CE7352800F5EAAE /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F082CE7352800F5EAAE /* RealityKitContent */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		BAEB3F232CE7362F00F5EAAE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F222CE7362F00F5EAAE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAEB3F2B2CE7362F00F5EAAE /* PilotAGlider */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F342CE7368C00F5EAAE /* App */,
+				BAEB3F352CE7369300F5EAAE /* AppModel */,
+				BAEB3F392CE7370B00F5EAAE /* Views */,
+				BAEB3F3A2CE7372A00F5EAAE /* Utilities */,
+				BAEB3F252CE7362F00F5EAAE /* Assets.xcassets */,
+				BAEB3F282CE7362F00F5EAAE /* Info.plist */,
+				BAEB3F232CE7362F00F5EAAE /* Preview Content */,
+			);
+			path = PilotAGlider;
+			sourceTree = "<group>";
+		};
+		BAEB3F342CE7368C00F5EAAE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F292CE7362F00F5EAAE /* PilotAGliderApp.swift */,
+				BAEB3F3E2CE737A700F5EAAE /* PrivacyInfo.xcprivacy */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BAEB3F352CE7369300F5EAAE /* AppModel */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F242CE7362F00F5EAAE /* AppModel.swift */,
+			);
+			path = AppModel;
+			sourceTree = "<group>";
+		};
+		BAEB3F392CE7370B00F5EAAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F262CE7362F00F5EAAE /* ContentView.swift */,
+				BAEB3F272CE7362F00F5EAAE /* ImmersiveView.swift */,
+				BAEB3F2A2CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BAEB3F3A2CE7372A00F5EAAE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F3B2CE7373900F5EAAE /* Logger */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BAEB3F3B2CE7373900F5EAAE /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				BAEB3F3C2CE7374400F5EAAE /* Logger.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAEB3F032CE7352800F5EAAE /* PilotAGlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAEB3F1C2CE7352900F5EAAE /* Build configuration list for PBXNativeTarget "PilotAGlider" */;
+			buildPhases = (
+				BAEB3F002CE7352800F5EAAE /* Sources */,
+				BAEB3F012CE7352800F5EAAE /* Frameworks */,
+				BAEB3F022CE7352800F5EAAE /* Resources */,
+				BAEB3F212CE735E800F5EAAE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PilotAGlider;
+			packageProductDependencies = (
+				BAEB3F092CE7352800F5EAAE /* RealityKitContent */,
+			);
+			productName = PilotAGlider;
+			productReference = BAEB3F042CE7352800F5EAAE /* PilotAGlider.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAEB3EFC2CE7352800F5EAAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					BAEB3F032CE7352800F5EAAE = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = BAEB3EFF2CE7352800F5EAAE /* Build configuration list for PBXProject "PilotAGlider" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAEB3EFB2CE7352800F5EAAE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BAEB3F052CE7352800F5EAAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAEB3F032CE7352800F5EAAE /* PilotAGlider */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAEB3F022CE7352800F5EAAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEB3F3F2CE737A700F5EAAE /* PrivacyInfo.xcprivacy in Resources */,
+				BAEB3F2C2CE7362F00F5EAAE /* Preview Assets.xcassets in Resources */,
+				BAEB3F2D2CE7362F00F5EAAE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BAEB3F212CE735E800F5EAAE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Adds support for Apple Silicon brew directory\nexport PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAEB3F002CE7352800F5EAAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAEB3F2F2CE7362F00F5EAAE /* AppModel.swift in Sources */,
+				BAEB3F3D2CE7374400F5EAAE /* Logger.swift in Sources */,
+				BAEB3F302CE7362F00F5EAAE /* ContentView.swift in Sources */,
+				BAEB3F312CE7362F00F5EAAE /* ImmersiveView.swift in Sources */,
+				BAEB3F322CE7362F00F5EAAE /* PilotAGliderApp.swift in Sources */,
+				BAEB3F332CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BAEB3F1D2CE7352900F5EAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PilotAGlider/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pilot A Glider";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.PilotAGlider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		BAEB3F1E2CE7352900F5EAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PilotAGlider/Preview Content\"";
+				DEVELOPMENT_TEAM = J5CY9Q9UP5;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Pilot A Glider";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atarayosd.PilotAGlider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		BAEB3F1F2CE7352900F5EAAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		BAEB3F202CE7352900F5EAAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = xros;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAEB3EFF2CE7352800F5EAAE /* Build configuration list for PBXProject "PilotAGlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAEB3F1F2CE7352900F5EAAE /* Debug */,
+				BAEB3F202CE7352900F5EAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAEB3F1C2CE7352900F5EAAE /* Build configuration list for PBXNativeTarget "PilotAGlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAEB3F1D2CE7352900F5EAAE /* Debug */,
+				BAEB3F1E2CE7352900F5EAAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BAEB3F092CE7352800F5EAAE /* RealityKitContent */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityKitContent;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = BAEB3EFC2CE7352800F5EAAE /* Project object */;
+}
