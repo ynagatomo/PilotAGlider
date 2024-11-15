@@ -26,6 +26,7 @@ You'll soon want to use hand gestures instead. I'll leave it up to you. :)
 1. Replace the image with HDRI/360 images of the scenery you would like to fly through.
 1. Play sound effects such as engine sounds and BGM.
 1. Display information on cockpit instruments or HUD.
+1. Add environmental VFX such as rain and fog.
 1. Add target rings to crawl through as game elements. (move objects relative to each other)
 1. Add hand gestures to control the glider instead of a Game Controller.
 

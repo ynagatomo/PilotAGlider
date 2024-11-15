@@ -14,11 +14,9 @@ struct ImmersiveView: View {
     var body: some View {
         RealityView { content in
             // Add the initial RealityKit content
-            if let immersiveContentEntity = try? await Entity(named: "Immersive", in: realityKitContentBundle) {
-                content.add(immersiveContentEntity)
-
-                // Put skybox here.  See example in World project available at
-                // https://developer.apple.com/
+            if let rootEntity = try? await Entity(named: "Flight", in: realityKitContentBundle) {
+                rootEntity.position = .init(x: 0, y: 0.7, z: 0)
+                content.add(rootEntity)
             }
         }
     }
