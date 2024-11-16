@@ -8,10 +8,10 @@ Arrange this project as you like and make it a fun game.
 - Xcode 16.2 beta 2 , visionOS 2.1 or 2.2 beta 2+ (<em>visionOS 2.2 beta does not work with this project, due to its issue on Game Controller support.</em>)
 - Since this app uses a Game Controller to control a glider, you need to use an Apple Vision Pro and a Game Controller like a PlayStation Dualsense.
 
-<img src="imgs/gl1.png">
-<img src="imgs/gl2.png">
-<img src="imgs/gl3.png">
-<img src="imgs/glmv720.gif">
+<img src="imgs/gl1.png" width=400>
+<img src="imgs/gl2.png" width=400>
+<img src="imgs/gl3.png" width=400>
+<img src="imgs/glmv720.gif" width=400>
 
 ## Game Controller
 
