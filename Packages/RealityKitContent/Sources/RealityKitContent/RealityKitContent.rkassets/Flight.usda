@@ -38,6 +38,8 @@ def Xform "Root"
                     float3 emissionDirection = (0, 0, 1)
                     double emissionDuration = 10
                     token emitterShape = "Sphere"
+                    bool isLocal = 1
+                    bool isLocalFields = 1
                     float3 shapeSize = (0.05, 0.05, 0.05)
 
                     def RealityKitStruct "mainEmitter"
@@ -80,6 +82,8 @@ def Xform "Root"
                     float3 emissionDirection = (0, 0, 1)
                     double emissionDuration = 10
                     token emitterShape = "Sphere"
+                    bool isLocal = 1
+                    bool isLocalFields = 1
                     float3 shapeSize = (0.05, 0.05, 0.05)
 
                     def RealityKitStruct "mainEmitter"
