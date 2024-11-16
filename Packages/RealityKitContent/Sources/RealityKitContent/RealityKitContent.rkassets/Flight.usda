@@ -38,8 +38,8 @@ def Xform "Root"
                     float3 emissionDirection = (0, 0, 1)
                     double emissionDuration = 10
                     token emitterShape = "Sphere"
-                    bool isLocal = 1
-                    bool isLocalFields = 1
+                    bool isLocal = 0
+                    bool isLocalFields = 0
                     float3 shapeSize = (0.05, 0.05, 0.05)
 
                     def RealityKitStruct "mainEmitter"
@@ -82,8 +82,8 @@ def Xform "Root"
                     float3 emissionDirection = (0, 0, 1)
                     double emissionDuration = 10
                     token emitterShape = "Sphere"
-                    bool isLocal = 1
-                    bool isLocalFields = 1
+                    bool isLocal = 0
+                    bool isLocalFields = 0
                     float3 shapeSize = (0.05, 0.05, 0.05)
 
                     def RealityKitStruct "mainEmitter"
@@ -268,17 +268,19 @@ def Xform "Root"
 
     def Material "MatSkydome"
     {
-        asset inputs:ImageFileA = @Textures/alps_field_4k.heic@ (
+        asset inputs:ImageFileA = @Textures/pizzo_pernice_4k.heic@ (
             customData = {
                 dictionary realitykit = {
-                    float2 positionInSubgraph = (6.986914, -23.014961)
+                    float2 positionInSubgraph = (4.5714717, 40.70769)
+                    int stackingOrderInSubgraph = 92
                 }
             }
         )
-        asset inputs:ImageFileB = @Textures/rogland_clear_night_4k.heic@ (
+        asset inputs:ImageFileB = @Textures/kiara_1_dawn_4k.heic@ (
             customData = {
                 dictionary realitykit = {
-                    float2 positionInSubgraph = (7.0032516, 46.35882)
+                    float2 positionInSubgraph = (6.150341, 198.86604)
+                    int stackingOrderInSubgraph = 92
                 }
             }
         )
@@ -286,7 +288,7 @@ def Xform "Root"
             customData = {
                 dictionary realitykit = {
                     float2 positionInSubgraph = (10.790437, 117.2244)
-                    int stackingOrderInSubgraph = 90
+                    int stackingOrderInSubgraph = 92
                 }
             }
         )
@@ -345,7 +347,7 @@ def Xform "Root"
             string inputs:vaddressmode
             color3f outputs:out
             float2 ui:nodegraph:node:pos = (478.96426, 329.47696)
-            int ui:nodegraph:node:stackingOrder = 75
+            int ui:nodegraph:node:stackingOrder = 91
         }
     }
 

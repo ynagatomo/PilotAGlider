@@ -17,6 +17,7 @@ struct ImmersiveView: View {
         RealityView { content in
             // Add the initial RealityKit content
             if let rootEntity = try? await Entity(named: "Flight", in: realityKitContentBundle) {
+                // dumpRealityEntity(rootEntity)
                 rootEntity.position = .init(x: 0, y: 0.7, z: 0)
 
                 appModel.setupFlyingScene(rootEntity)

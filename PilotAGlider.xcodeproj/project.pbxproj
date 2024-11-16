@@ -11,6 +11,7 @@
 		BA4F28DB2CE80D6F00A6965C /* PlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F28DA2CE80D6F00A6965C /* PlayingView.swift */; };
 		BA4F28DD2CE8249E00A6965C /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F28DC2CE8249E00A6965C /* Float+Extension.swift */; };
 		BA4F28DF2CE8434F00A6965C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F28DE2CE8434F00A6965C /* Constants.swift */; };
+		BA7A68942CE85C6600B6744A /* RealityDump.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7A68932CE85C6600B6744A /* RealityDump.swift */; };
 		BAEB3F0A2CE7352800F5EAAE /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = BAEB3F092CE7352800F5EAAE /* RealityKitContent */; };
 		BAEB3F2C2CE7362F00F5EAAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEB3F222CE7362F00F5EAAE /* Preview Assets.xcassets */; };
 		BAEB3F2D2CE7362F00F5EAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEB3F252CE7362F00F5EAAE /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		BA4F28DA2CE80D6F00A6965C /* PlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingView.swift; sourceTree = "<group>"; };
 		BA4F28DC2CE8249E00A6965C /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
 		BA4F28DE2CE8434F00A6965C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BA7A68932CE85C6600B6744A /* RealityDump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityDump.swift; sourceTree = "<group>"; };
 		BAEB3F042CE7352800F5EAAE /* PilotAGlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotAGlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEB3F082CE7352800F5EAAE /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		BAEB3F222CE7362F00F5EAAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -53,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA7A68922CE85C5900B6744A /* RealityDump */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A68932CE85C6600B6744A /* RealityDump.swift */,
+			);
+			path = RealityDump;
+			sourceTree = "<group>";
+		};
 		BAEB3EFB2CE7352800F5EAAE = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +143,7 @@
 		BAEB3F3A2CE7372A00F5EAAE /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				BA7A68922CE85C5900B6744A /* RealityDump */,
 				BAEB3F3B2CE7373900F5EAAE /* Logger */,
 				BA4F28DC2CE8249E00A6965C /* Float+Extension.swift */,
 			);
@@ -246,6 +257,7 @@
 			files = (
 				BAEB3F2F2CE7362F00F5EAAE /* AppModel.swift in Sources */,
 				BAEB3F3D2CE7374400F5EAAE /* Logger.swift in Sources */,
+				BA7A68942CE85C6600B6744A /* RealityDump.swift in Sources */,
 				BAEB3F302CE7362F00F5EAAE /* ContentView.swift in Sources */,
 				BA4F28DB2CE80D6F00A6965C /* PlayingView.swift in Sources */,
 				BAEB3F312CE7362F00F5EAAE /* ImmersiveView.swift in Sources */,

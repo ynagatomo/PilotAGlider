@@ -39,7 +39,6 @@ struct PilotAGliderApp: App {
                     appModel.immersiveSpaceState = .closed
                 }
         }
-        // .immersionStyle(selection: .constant(.progressive), in: .progressive)
         .immersionStyle(selection: $immersion, in: immersion)
     }
 
