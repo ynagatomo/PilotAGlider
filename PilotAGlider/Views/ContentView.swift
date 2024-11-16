@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         if appModel.immersiveSpaceState == .closed {
             StartView()
+                .glassBackgroundEffect()
         } else {
             EmptyView()
                 .frame(width: 10, height: 10)

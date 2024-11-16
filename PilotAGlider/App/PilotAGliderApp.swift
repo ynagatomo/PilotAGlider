@@ -26,6 +26,7 @@ struct PilotAGliderApp: App {
                 }
         }
         .windowResizability(.contentSize)
+        .windowStyle(.plain)
 
         ImmersiveSpace(id: appModel.immersiveSpaceID) {
             ImmersiveView()
