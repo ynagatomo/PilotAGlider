@@ -12,6 +12,7 @@ enum Constants {
     static let gliderAltitudeMax: Float = 400.0 // [m]
     static let gliderAltitudeMin: Float = -200.0 // [m]
     static let gliderInitialAltitude: Float = 200 // [m]
+    static let cloudAltitude: Float = 400.0 // [m]
 
     // Game Controller
     static let stickDeadZone: Float = 0.01

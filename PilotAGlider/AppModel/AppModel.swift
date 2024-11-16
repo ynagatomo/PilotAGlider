@@ -28,6 +28,7 @@ class AppModel {
     private var accumulativeTime: Double = 0
     private var gliderEntity: Entity?
     private var skydomeEntity: Entity?
+    private var cloudEntity: Entity?
 
     private var gliderAltitude: Float = 0.0 // [m]
     private var gliderPitch = Float.zero
@@ -48,10 +49,12 @@ class AppModel {
 extension AppModel {
     func setupFlyingScene(_ rootEntity: Entity) {
         guard let glider = rootEntity.findEntity(named: "Glider"),
-              let skydome = rootEntity.findEntity(named: "Skydome") else { return }
+              let skydome = rootEntity.findEntity(named: "Skydome"),
+              let cloud = rootEntity.findEntity(named: "CloudParticle") else { return }
 
         self.gliderEntity = glider
         self.skydomeEntity = skydome
+        self.cloudEntity = cloud
 
         self.accumulativeTime = 0
         gliderPitch = Float.zero
@@ -60,6 +63,8 @@ extension AppModel {
         gliderRoll = 0 // [radian]
 
         skydome.position = SIMD3<Float>(0, -Constants.gliderInitialAltitude, 0)
+        cloud.position = SIMD3<Float>(0,
+            Constants.cloudAltitude - Constants.gliderInitialAltitude, 0)
     }
 
     func gameLoop(_ deltaTime: Double) {
@@ -85,12 +90,14 @@ extension AppModel {
         let speed = expf(gcvalue.ryvalue + 1.0) * Constants.speedFactor // e^(0...2) => 1...e^2
         let velocityY = speed * -gliderPitch
         let movementY = velocityY * Float(deltaTime)
-        if let skydomeEntity {
+        if let skydomeEntity, let cloudEntity {
             let altitude = gliderAltitude + movementY
             if altitude < Constants.gliderAltitudeMax
                 && altitude > Constants.gliderAltitudeMin {
                 gliderAltitude = altitude
                 skydomeEntity.position.y = -altitude
+
+                cloudEntity.position.y -= movementY
             }
         }
     }
