@@ -11,6 +11,7 @@ import RealityKitContent
 
 struct ImmersiveView: View {
     @Environment(AppModel.self) private var appModel
+    @AppStorage(Constants.appStorageKeyOffset) var offset: Double = 0
     @State private var eventSubscription: EventSubscription?
 
     var body: some View {
@@ -20,6 +21,7 @@ struct ImmersiveView: View {
                 rootEntity.position = .init(x: 0, y: 0.7, z: 0)
 
                 appModel.setupFlyingScene(rootEntity)
+                appModel.setBaseOffset(Float(offset))
 
                 eventSubscription = content.subscribe(to: SceneEvents.Update.self) { event in
                     appModel.gameLoop(event.deltaTime)

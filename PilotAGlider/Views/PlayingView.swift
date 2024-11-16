@@ -9,14 +9,14 @@ import SwiftUI
 
 struct PlayingView: View {
     @Environment(AppModel.self) private var appModel
-    @State private var offset: Float = 0
+    @AppStorage(Constants.appStorageKeyOffset) var offset: Double = 0
 
     var body: some View {
         VStack {
             Text("Adjust the glider position")
             Slider(value: $offset, in: -0.5...1.0, step: 0.1)
                 .onChange(of: offset) { _, newValue in
-                    appModel.setBaseOffset(newValue)
+                    appModel.setBaseOffset(Float(newValue))
                 }
                 .padding(20)
 

@@ -8,6 +8,9 @@
 import Foundation
 
 enum Constants {
+    // AppStorage Keys
+    static let appStorageKeyOffset = "AppStorageKeyOffset"
+
     static let speedFactor: Float = 20.0
     static let gliderAltitudeMax: Float = 400.0 // [m]
     static let gliderAltitudeMin: Float = -200.0 // [m]
