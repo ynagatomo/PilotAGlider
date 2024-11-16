@@ -237,15 +237,20 @@ def Xform "Root"
     }
 
     def "skydome" (
+        customData = {
+            float3 rotationEulerHint = (0, 0, 0)
+        }
         references = @Models/skydome.usdz@
     )
     {
-        reorder nameChildren = ["CloudParticle", "Materials", "Geom"]
+        reorder nameChildren = ["CloudParticle", "ParticleEmitter", "Materials", "Geom"]
+        quatf xformOp:orient = (1, 0, 0, 0)
         float3 xformOp:scale = (1, 1, 1)
         uniform token[] xformOpOrder = ["xformOp:translate", "xformOp:orient", "xformOp:scale"]
 
         over "Geom"
         {
+            reorder nameChildren = ["CloudParticle", "Skydome"]
             over "Skydome" (
                 prepend apiSchemas = ["MaterialBindingAPI"]
             )
@@ -369,6 +374,7 @@ def Xform "Root"
             customData = {
                 dictionary realitykit = {
                     float2 positionInSubgraph = (10.790437, 117.2244)
+                    int stackingOrderInSubgraph = 90
                 }
             }
         )
@@ -398,6 +404,7 @@ def Xform "Root"
             asset inputs:file.connect = </Root/MatSkydome.inputs:ImageFileA>
             string inputs:filtertype
             float2 inputs:texcoord
+            string inputs:vaddressmode
             color3f outputs:out
             float2 ui:nodegraph:node:pos = (474.5904, 13.071553)
             int ui:nodegraph:node:stackingOrder = 89

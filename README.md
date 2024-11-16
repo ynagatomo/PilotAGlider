@@ -29,6 +29,9 @@ You'll soon want to use hand gestures instead. I'll leave it up to you. :)
 1. Add environmental VFX such as rain and fog.
 1. Add target rings to crawl through as game elements. (move objects relative to each other)
 1. Add hand gestures to control the glider instead of a Game Controller.
+1. Add IBL using the HDRI/360 images.
+
+* You may want to add the roll, but be careful as this may cause motion sickness.
 
 <!--
 Example 1: Flying Space Shuttle

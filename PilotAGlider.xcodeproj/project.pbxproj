@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA4F28D92CE80D6500A6965C /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F28D82CE80D6500A6965C /* StartView.swift */; };
+		BA4F28DB2CE80D6F00A6965C /* PlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F28DA2CE80D6F00A6965C /* PlayingView.swift */; };
+		BA4F28DD2CE8249E00A6965C /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F28DC2CE8249E00A6965C /* Float+Extension.swift */; };
+		BA4F28DF2CE8434F00A6965C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4F28DE2CE8434F00A6965C /* Constants.swift */; };
 		BAEB3F0A2CE7352800F5EAAE /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = BAEB3F092CE7352800F5EAAE /* RealityKitContent */; };
 		BAEB3F2C2CE7362F00F5EAAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEB3F222CE7362F00F5EAAE /* Preview Assets.xcassets */; };
 		BAEB3F2D2CE7362F00F5EAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAEB3F252CE7362F00F5EAAE /* Assets.xcassets */; };
@@ -14,12 +18,15 @@
 		BAEB3F302CE7362F00F5EAAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F262CE7362F00F5EAAE /* ContentView.swift */; };
 		BAEB3F312CE7362F00F5EAAE /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F272CE7362F00F5EAAE /* ImmersiveView.swift */; };
 		BAEB3F322CE7362F00F5EAAE /* PilotAGliderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F292CE7362F00F5EAAE /* PilotAGliderApp.swift */; };
-		BAEB3F332CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F2A2CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift */; };
 		BAEB3F3D2CE7374400F5EAAE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEB3F3C2CE7374400F5EAAE /* Logger.swift */; };
 		BAEB3F3F2CE737A700F5EAAE /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = BAEB3F3E2CE737A700F5EAAE /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA4F28D82CE80D6500A6965C /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		BA4F28DA2CE80D6F00A6965C /* PlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingView.swift; sourceTree = "<group>"; };
+		BA4F28DC2CE8249E00A6965C /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
+		BA4F28DE2CE8434F00A6965C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		BAEB3F042CE7352800F5EAAE /* PilotAGlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PilotAGlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAEB3F082CE7352800F5EAAE /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		BAEB3F222CE7362F00F5EAAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -29,7 +36,6 @@
 		BAEB3F272CE7362F00F5EAAE /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		BAEB3F282CE7362F00F5EAAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BAEB3F292CE7362F00F5EAAE /* PilotAGliderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PilotAGliderApp.swift; sourceTree = "<group>"; };
-		BAEB3F2A2CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleImmersiveSpaceButton.swift; sourceTree = "<group>"; };
 		BAEB3F3C2CE7374400F5EAAE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		BAEB3F3E2CE737A700F5EAAE /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		BAEB3F402CE73B7400F5EAAE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -99,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				BAEB3F292CE7362F00F5EAAE /* PilotAGliderApp.swift */,
+				BA4F28DE2CE8434F00A6965C /* Constants.swift */,
 				BAEB3F3E2CE737A700F5EAAE /* PrivacyInfo.xcprivacy */,
 			);
 			path = App;
@@ -116,8 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				BAEB3F262CE7362F00F5EAAE /* ContentView.swift */,
+				BA4F28D82CE80D6500A6965C /* StartView.swift */,
+				BA4F28DA2CE80D6F00A6965C /* PlayingView.swift */,
 				BAEB3F272CE7362F00F5EAAE /* ImmersiveView.swift */,
-				BAEB3F2A2CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				BAEB3F3B2CE7373900F5EAAE /* Logger */,
+				BA4F28DC2CE8249E00A6965C /* Float+Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -238,9 +247,12 @@
 				BAEB3F2F2CE7362F00F5EAAE /* AppModel.swift in Sources */,
 				BAEB3F3D2CE7374400F5EAAE /* Logger.swift in Sources */,
 				BAEB3F302CE7362F00F5EAAE /* ContentView.swift in Sources */,
+				BA4F28DB2CE80D6F00A6965C /* PlayingView.swift in Sources */,
 				BAEB3F312CE7362F00F5EAAE /* ImmersiveView.swift in Sources */,
+				BA4F28DF2CE8434F00A6965C /* Constants.swift in Sources */,
 				BAEB3F322CE7362F00F5EAAE /* PilotAGliderApp.swift in Sources */,
-				BAEB3F332CE7362F00F5EAAE /* ToggleImmersiveSpaceButton.swift in Sources */,
+				BA4F28DD2CE8249E00A6965C /* Float+Extension.swift in Sources */,
+				BA4F28D92CE80D6500A6965C /* StartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
