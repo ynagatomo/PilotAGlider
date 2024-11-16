@@ -8,9 +8,7 @@ Arrange this project as you like and make it a fun game.
 - Xcode 16.2 beta 2 , visionOS 2.1 or 2.2 beta 2+ (<em>visionOS 2.2 beta does not work with this project, due to its issue on Game Controller support.</em>)
 - Since this app uses a Game Controller to control a glider, you need to use an Apple Vision Pro and a Game Controller like a PlayStation Dualsense.
 
-<img src="imgs/gl1.png" width=300>
-<img src="imgs/gl2.png" width=300>
-<img src="imgs/gl3.png" width=300>
+<img src="imgs/gl1.png" width=300> <img src="imgs/gl2.png" width=300> <img src="imgs/gl3.png" width=300>
 <img src="imgs/glmv720.gif" width=300>
 
 ## Game Controller
@@ -27,6 +25,7 @@ You'll soon want to use hand gestures instead. I'll leave it up to you. :)
     - RealityKitContent package has several images inside, so you can choose some of them with RCP.
     - You can also change the images by Swift code programmatically.
     - Add your favorite images and use them.
+    <img src="imgs/rcp.png">
 1. Play sound effects such as engine sounds and BGM.
 1. Display information on cockpit instruments or HUD.
 1. Add environmental VFX such as rain and fog.
