@@ -8,10 +8,10 @@ Arrange this project as you like and make it a fun game.
 - Xcode 16.2 beta 2 , visionOS 2.1 or 2.2 beta 2+ (<em>visionOS 2.2 beta does not work with this project, due to its issue on Game Controller support.</em>)
 - Since this app uses a Game Controller to control a glider, you need to use an Apple Vision Pro and a Game Controller like a PlayStation Dualsense.
 
-<!--
-<img src="imgs/screenshot.jpg">
-<img src="imgs/rk720.gif">
--->
+<img src="imgs/gl1.png">
+<img src="imgs/gl2.png">
+<img src="imgs/gl3.png">
+<img src="imgs/glmv720.gif">
 
 ## Game Controller
 
@@ -24,6 +24,9 @@ You'll soon want to use hand gestures instead. I'll leave it up to you. :)
 ## Next Steps
 
 1. Replace the image with HDRI/360 images of the scenery you would like to fly through.
+    - RealityKitContent package has several images inside, so you can choose some of them with RCP.
+    - You can also change the images by Swift code programmatically.
+    - Add your favorite images and use them.
 1. Play sound effects such as engine sounds and BGM.
 1. Display information on cockpit instruments or HUD.
 1. Add environmental VFX such as rain and fog.
@@ -31,7 +34,7 @@ You'll soon want to use hand gestures instead. I'll leave it up to you. :)
 1. Add hand gestures to control the glider instead of a Game Controller.
 1. Add IBL using the HDRI/360 images.
 
-* You may want to add the roll, but be careful as this may cause motion sickness.
+* You may want to add the roll movement, but be careful as this may cause motion sickness.
 
 <!--
 Example 1: Flying Space Shuttle

@@ -25,14 +25,22 @@ class AppModel {
 
     // Immersive Scene Game Loop
 
+    private var baseOffset: Float = 0.0 // [m]
+
     private var accumulativeTime: Double = 0
     private var gliderEntity: Entity?
     private var skydomeEntity: Entity?
+    private var skydomeModelEntity: ModelEntity?
+    private var cloudEntity: Entity?
 
     private var gliderAltitude: Float = 0.0 // [m]
     private var gliderPitch = Float.zero
     private var gliderYaw = Float.zero
     private var gliderRoll: Float = 0 // [radians]
+
+    private var showingDuration: Double = 0 // [sec]
+    private var transitionDuration: Double = 0 // [sec]
+    private var transitionAtoB = true
 
     // Game Controller
 
@@ -48,10 +56,14 @@ class AppModel {
 extension AppModel {
     func setupFlyingScene(_ rootEntity: Entity) {
         guard let glider = rootEntity.findEntity(named: "Glider"),
-              let skydome = rootEntity.findEntity(named: "Skydome") else { return }
+              let skydome = rootEntity.findEntity(named: "Skydome"),
+              let cloud = rootEntity.findEntity(named: "CloudParticle"),
+              let skydomeModel = skydome.findEntity(named: "Skydome") as? ModelEntity else { return }
 
         self.gliderEntity = glider
         self.skydomeEntity = skydome
+        self.cloudEntity = cloud
+        self.skydomeModelEntity = skydomeModel
 
         self.accumulativeTime = 0
         gliderPitch = Float.zero
@@ -60,6 +72,15 @@ extension AppModel {
         gliderRoll = 0 // [radian]
 
         skydome.position = SIMD3<Float>(0, -Constants.gliderInitialAltitude, 0)
+        cloud.position = SIMD3<Float>(0,
+            Constants.cloudAltitude - Constants.gliderInitialAltitude, 0)
+
+        showingDuration = 0 // [sec]
+        transitionDuration = 0 // [sec]
+    }
+
+    func setBaseOffset(_ offset: Float) {
+        gliderEntity?.position.y = offset
     }
 
     func gameLoop(_ deltaTime: Double) {
@@ -77,20 +98,50 @@ extension AppModel {
         //    gliderRoll *= 0.99
         // }
 
+        // Rotate the skydome
+
         let quat = simd_quatf(angle: gliderPitch, axis: [1, 0, 0])
         * simd_quatf(angle: gliderYaw, axis: [0, 1, 0])
         // * simd_quatf(angle: gliderRoll, axis: [0, 0, 1])
         skydomeEntity?.orientation = quat
 
+        // Going up or down
+
         let speed = expf(gcvalue.ryvalue + 1.0) * Constants.speedFactor // e^(0...2) => 1...e^2
         let velocityY = speed * -gliderPitch
         let movementY = velocityY * Float(deltaTime)
-        if let skydomeEntity {
+        if let skydomeEntity, let cloudEntity {
             let altitude = gliderAltitude + movementY
             if altitude < Constants.gliderAltitudeMax
                 && altitude > Constants.gliderAltitudeMin {
                 gliderAltitude = altitude
                 skydomeEntity.position.y = -altitude
+
+                cloudEntity.position.y -= movementY
+            }
+        }
+
+        // Scenery
+
+        showingDuration += deltaTime
+        if showingDuration > Constants.sceneryShowingTime {
+            let transitionTime = Constants.sceneryTransitionTime // [sec]
+            var mixRate = transitionDuration / transitionTime
+            if !transitionAtoB {
+                mixRate = 1.0 - mixRate
+            }
+            transitionDuration += deltaTime
+            if transitionDuration > transitionTime {
+                showingDuration = 0.0
+                transitionDuration = 0.0
+                transitionAtoB.toggle()
+            } else {
+                if var material = skydomeModelEntity?.model?.materials.first as? ShaderGraphMaterial {
+                    try? material.setParameter(name: "MixRate", value: .float(Float(mixRate)))
+                    skydomeModelEntity?.model?.materials = [material]
+                } else {
+                    assertionFailure()
+                }
             }
         }
     }
