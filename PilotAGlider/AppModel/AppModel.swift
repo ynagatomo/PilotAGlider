@@ -118,8 +118,8 @@ extension AppModel {
         // Scenery
 
         showingDuration += deltaTime
-        if showingDuration > 5.0 {
-            let transitionTime = 3.0 // [sec]
+        if showingDuration > Constants.sceneryShowingTime {
+            let transitionTime = Constants.sceneryTransitionTime // [sec]
             var mixRate = transitionDuration / transitionTime
             if !transitionAtoB {
                 mixRate = 1.0 - mixRate

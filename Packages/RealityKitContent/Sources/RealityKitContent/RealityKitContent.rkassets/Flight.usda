@@ -268,7 +268,7 @@ def Xform "Root"
 
     def Material "MatSkydome"
     {
-        asset inputs:ImageFileA = @Textures/pizzo_pernice_4k.heic@ (
+        asset inputs:ImageFileA = @Textures/alps_field_4k.heic@ (
             customData = {
                 dictionary realitykit = {
                     float2 positionInSubgraph = (4.5714717, 40.70769)

@@ -24,6 +24,9 @@ You'll soon want to use hand gestures instead. I'll leave it up to you. :)
 ## Next Steps
 
 1. Replace the image with HDRI/360 images of the scenery you would like to fly through.
+    - RealityKitContent package has several images inside, so you can choose some of them with RCP.
+    - You can also change the images by Swift code programmatically.
+    - Add your favorite images and use them.
 1. Play sound effects such as engine sounds and BGM.
 1. Display information on cockpit instruments or HUD.
 1. Add environmental VFX such as rain and fog.
