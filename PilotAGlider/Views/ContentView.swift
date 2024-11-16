@@ -16,9 +16,9 @@ struct ContentView: View {
             StartView()
                 .glassBackgroundEffect()
         } else {
-            EmptyView()
-                .frame(width: 10, height: 10)
-            // PlayingView()  // Use this View if you want to close by tapping
+            // EmptyView()
+            //    .frame(width: 10, height: 10)
+            PlayingView()
         }
     }
 }

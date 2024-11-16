@@ -15,7 +15,6 @@ struct ImmersiveView: View {
 
     var body: some View {
         RealityView { content in
-            // Add the initial RealityKit content
             if let rootEntity = try? await Entity(named: "Flight", in: realityKitContentBundle) {
                 // dumpRealityEntity(rootEntity)
                 rootEntity.position = .init(x: 0, y: 0.7, z: 0)
@@ -30,12 +29,21 @@ struct ImmersiveView: View {
                 assertionFailure()
             }
         } // RealityView
+        // .gesture(dragGesture)
         .handlesGameControllerEvents(matching: .gamepad)
         .onDisappear {
             eventSubscription?.cancel() // fail-safe
             eventSubscription = nil
         }
     } // body
+
+    //    private var dragGesture: some Gesture {
+    //        DragGesture()
+    //            .targetedToAnyEntity()
+    //            .onChanged { value in
+    //                value.entity.position = value.convert(value.location3D, from: .local, to: value.entity.parent!)
+    //            }
+    //    }
 }
 
 #Preview(immersionStyle: .mixed) {

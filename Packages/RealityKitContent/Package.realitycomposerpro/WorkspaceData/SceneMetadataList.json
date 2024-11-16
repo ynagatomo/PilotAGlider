@@ -40,15 +40,6 @@
       [
         "AF09ED6F-1707-48FD-8720-65B998362C09",
         "Root",
-        "Sphere_Right"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "AF09ED6F-1707-48FD-8720-65B998362C09",
-        "Root",
         "Sphere_Left"
       ],
       {
@@ -58,6 +49,15 @@
       [
         "AF09ED6F-1707-48FD-8720-65B998362C09",
         "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "AF09ED6F-1707-48FD-8720-65B998362C09",
+        "Root",
+        "Sphere_Right"
       ],
       {
         "isExpanded" : true,
@@ -95,7 +95,9 @@
     "objectMetadataList" : [
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
-        "Root"
+        "Root",
+        "GridMaterial",
+        "GridMaterial"
       ],
       {
         "isExpanded" : true,
@@ -103,9 +105,7 @@
       },
       [
         "D66134B1-3681-4A8E-AFE5-29F257229F3B",
-        "Root",
-        "GridMaterial",
-        "GridMaterial"
+        "Root"
       ],
       {
         "isExpanded" : true,
@@ -115,23 +115,6 @@
   },
   "F0034FBD-7960-475C-8E7C-0FB76350289E" : {
     "objectMetadataList" : [
-      [
-        "F0034FBD-7960-475C-8E7C-0FB76350289E",
-        "Root"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
-      [
-        "F0034FBD-7960-475C-8E7C-0FB76350289E",
-        "Root",
-        "skydome"
-      ],
-      {
-        "isExpanded" : true,
-        "isLocked" : false
-      },
       [
         "F0034FBD-7960-475C-8E7C-0FB76350289E",
         "Root",
@@ -144,8 +127,37 @@
       [
         "F0034FBD-7960-475C-8E7C-0FB76350289E",
         "Root",
-        "skydome",
-        "Geom"
+        "Transform",
+        "panel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "F0034FBD-7960-475C-8E7C-0FB76350289E",
+        "Root",
+        "Glider",
+        "panel"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "F0034FBD-7960-475C-8E7C-0FB76350289E",
+        "Root"
+      ],
+      {
+        "isExpanded" : true,
+        "isLocked" : false
+      },
+      [
+        "F0034FBD-7960-475C-8E7C-0FB76350289E",
+        "Root",
+        "Transform",
+        "panel",
+        "gliderbody"
       ],
       {
         "isExpanded" : true,

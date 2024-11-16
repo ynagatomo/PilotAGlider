@@ -484,4 +484,3 @@ private let keywords = [ // (string, indentLevel [1...])
 @MainActor func dumpRealityEntity(_ entity: Entity, printing: Bool = true) -> [String] { return [] }
 #endif
 // swiftlint:enable line_length
-

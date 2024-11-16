@@ -25,6 +25,8 @@ class AppModel {
 
     // Immersive Scene Game Loop
 
+    private var baseOffset: Float = 0.0 // [m]
+
     private var accumulativeTime: Double = 0
     private var gliderEntity: Entity?
     private var skydomeEntity: Entity?
@@ -75,6 +77,10 @@ extension AppModel {
 
         showingDuration = 0 // [sec]
         transitionDuration = 0 // [sec]
+    }
+
+    func setBaseOffset(_ offset: Float) {
+        gliderEntity?.position.y = offset
     }
 
     func gameLoop(_ deltaTime: Double) {
