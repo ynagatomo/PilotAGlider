@@ -12,6 +12,7 @@ struct PilotAGliderApp: App {
     @Environment(\.dismissImmersiveSpace) private var dismissImmersiveSpace
     @Environment(\.openImmersiveSpace) private var openImmersiveSpace
     @State private var appModel = AppModel()
+    @State private var immersion: ImmersionStyle = .progressive(0.4...1.0, initialAmount: 0.8)
 
     var body: some Scene {
         WindowGroup {
@@ -38,7 +39,8 @@ struct PilotAGliderApp: App {
                     appModel.immersiveSpaceState = .closed
                 }
         }
-        .immersionStyle(selection: .constant(.progressive), in: .progressive)
+        // .immersionStyle(selection: .constant(.progressive), in: .progressive)
+        .immersionStyle(selection: $immersion, in: immersion)
     }
 
     private func showImmersiveSpace() {
