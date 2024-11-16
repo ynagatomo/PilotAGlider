@@ -4,6 +4,8 @@ This project shows a visionOS app that let users control a glider with a Game Co
 This app represents a very simple starting point and has no added game elements.
 Arrange this project as you like and make it a fun game.
 
+<em>There is a concern about air sickness. Avoid long flights.</em>
+
 - GitHub : https://github.com/ynagatomo/PilotAGlider
 - Xcode 16.2 beta 2 , visionOS 2.1 or 2.2 beta 2+ (<em>visionOS 2.2 beta does not work with this project, due to its issue on Game Controller support.</em>)
 - Since this app uses a Game Controller to control a glider, you need to use an Apple Vision Pro and a Game Controller like a PlayStation Dualsense.

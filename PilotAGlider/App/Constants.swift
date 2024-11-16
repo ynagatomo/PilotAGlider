@@ -18,8 +18,8 @@ enum Constants {
     static let cloudAltitude: Float = 400.0 // [m]
 
     // Scenery
-    static let sceneryShowingTime: Double = 10.0 // [sec]
-    static let sceneryTransitionTime: Double = 5.0 // [sec]
+    static let sceneryShowingTime: Double = 30.0 // [sec]
+    static let sceneryTransitionTime: Double = 3.0 // [sec]
 
     // Game Controller
     static let stickDeadZone: Float = 0.01
