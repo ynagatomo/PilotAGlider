@@ -18,6 +18,11 @@ You'll soon want to use hand gestures instead. I'll leave it up to you. :)
 
 <img src="imgs/gamecontroller.png" width=200>
 
+## Behind the Scenes
+
+Users pilot a glider inside a sphere, change the pitch and yaw of the glider using the game controller. However, Roll movement is not used as it can cause air sickness.
+
+<img src="imgs/rcp720.gif" width=400>
 
 ## Next Steps
 
